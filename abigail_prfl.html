@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Profile</title>
+    <link rel="stylesheet" href="styles.css">
+
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; 
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #306692;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .card {
+            flex: 1 1 calc(33% - 20px); 
+            box-sizing: border-box;
+            background-color: #e6f0ff; 
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            margin: 10px;
+
+        }
+
+        .card img {
+            display: inline-block;
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .card video{
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05); 
+        }
+
+
+        .section {
+            padding: 10px 0;
+        }
+
+        h2 {
+            color: #7fa6c4;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            list-style-type: none;
+            margin-top: 20px;
+        }
+
+        .social-links li {
+            margin-bottom: 10px;
+        }
+
+        .social-links a {
+            color: #306692;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #accaeb;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .profile-img {
+                width: 150px;
+            }
+
+            footer {
+                font-size: 0.8em;
+            }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Abigail Shi's Personal Profile</h1>
+            <nav>
+                <ul class="navlist">
+                    <li><a href="abigailS_prfl.html">Intro</a></li>
+                    <li><a href="page1.html">Academics</a></li>
+                    <li><a href="page2.html">Athletics</a></li>
+                    <li><a href="page3.html">Axtracurricular</a></li>
+                    <li><a href="page4.html">Leadership</a></li>
+                    <li><a href="page5.html">CS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="Intro" class="section">
+        <div class="container">
+            <div class="card">
+                <h2>About Me</h2>
+                <img src="tp1.jpg" alt="Your Photo" class="profile-img">
+                <img src="tp25.jpg" alt="Your Photo" class="profile-img">
+                <img src="tp26.jpg" alt="Your Photo" class="profile-img">
+                <p>Hello, I'm Abigail Shi. Welcome to my personal website. Feel free to explore my portfolio and get in touch!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="card">
+                <h2>Portfolio</h2>
+                <p>Abigail Shi
+                    <p>The Potter's School | Prospective Computer Science Major</p><br>
+                    
+                    As a dedicated and passionate student at The Potter's School, I am committed to furthering my education and pursuing a degree in Computer Science. With a strong foundation in programming, including self-studied Java and HTML, I aim to build on my technical skills and contribute to the ever-evolving field of technology.
+                    
+                    In addition to my academic pursuits, I am a Student-Athlete for tennis, where I have developed discipline, resilience, and teamwork. My involvement in British Parliamentary debate has not only honed my communication skills but also earned me recognition through various tournament awards.
+                    
+                    Outside the classroom, I actively engage in community service, where I have cultivated leadership abilities by leading a youth group that discusses relevant societal issues. As the leader of my school's honor society, I am dedicated to fostering academic excellence and encouraging service to others.</p>       
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <ul class="social-links">
+                <li><a href="mailto:abigail.shi@outlook.com">Email</a></li>
+                <li><a href="https://www.instagram.com/abigailshi074_/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/Abigail Shi" target="_blank">Facebook</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Abigail Shi. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
