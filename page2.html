@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abigailS_personalprofile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; 
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #306692;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: #7fa6c4;
+            margin-bottom: 20px;
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .section1 img{
+                width: 100%;           
+                height: auto;         
+                max-width: 1000px;     
+                object-fit: cover;     
+                display: block;       
+        }
+
+        .card {
+            flex: 1 1 calc(33% - 20px); 
+            box-sizing: border-box;
+            background-color: #e6f0ff; 
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            margin: 20px;
+
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .card video{
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05); 
+        }
+
+        .social-links {
+            list-style-type: none;
+            margin-top: 20px;
+        }
+
+        .social-links li {
+            margin-bottom: 10px;
+        }
+
+        .social-links a {
+            color: #306692;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #accaeb;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .profile-img {
+                width: 150px;
+            }
+
+            footer {
+                font-size: 0.8em;
+            }
+        }
+</style>
+        
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Abigail Shi's Personal Profile</h1>
+            <nav>
+                <ul class="navlist">
+                    <li><a href="abigailS_prfl.html">Intro</a></li>
+                    <li><a href="page1.html">Academics</a></li>
+                    <li><a href="page2.html">Athletics</a></li>
+                    <li><a href="page3.html">Axtracurricular</a></li>
+                    <li><a href="page4.html">Leadership</a></li>
+                    <li><a href="page5.html">CS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="UTR" class="section1">
+        <div class="container">
+            <div class="card">
+                <h2>UTR and ITF</h2>
+                I started participating in UTR competitions since high school, but due to the scarcity of tounaments, I switched to more ITF Junior60 competitions. In January 2024, I participated in my first ITF competition in Kathmandu, but lost the second round of the preliminaries. Later, they also participated in similar competitions in their local area and other cities in China, including Chengdu Station, Shenzhen Station, and Chongqing Station. At the same time, he participated in his first doubles match in October 2024. In the context of scarce and highly competitive events in China, I try my best to participate in various competitions.
+                <img src="tp6.jpg" alt="">
+                </div>
+        </div>
+    </section>
+
+    <section id="Video" class="section2">
+        <div class="container">
+            <div class="card">
+                <h2>Watch this YouTube video:</h2>
+                <iframe width: 100%; height: auto; max-width: 800px;
+                    src="https://www.youtube.com/watch?v=iQzCR2hy-WE" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <div class="video-container" class="section2">
+        <div class="container">
+            <div class="card">
+                <video width="100%" controls>
+                    <source src="tn.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <ul class="social-links">
+                <li><a href="mailto:abigail.shi@outlook.com">Email</a></li>
+                <li><a href="https://www.instagram.com/abeegail.s_074/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/Abigail Shi" target="_blank">Facebook</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Abigail Shi. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
